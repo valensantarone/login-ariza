@@ -38,26 +38,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registro de Usuario</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="./styles.css" />
 </head>
 <body>
-    <h2>Registro de Usuario</h2>
-    <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
-        <label for="username">Usuario:</label><br>
-        <input type="text" id="username" name="username" required><br><br>
-        
-        <label for="email">Email:</label><br>
-        <input type="email" id="email" name="email" required><br><br>
-        
-        <label for="password">Contraseña:</label><br>
-        <input type="password" id="password" name="password" required><br><br>
-        
-        <label for="phone">Teléfono:</label><br>
-        <input type="text" id="phone" name="phone" required><br><br>
-        
-        <input type="submit" value="Registrarse">
-        <button><a href="index.php">Iniciar Sesión</a></button>
-    </form>
+    <div class="container">
+        <h2 class="titulo">Registro de Usuario</h2>
+        <div class="contenedor_form-signup">
+            <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
+                <label for="username" class="titulos">Usuario:</label><br>
+                <input type="text" id="username" name="username" required><br><br>
+                
+                <label for="email" class="titulos">Email:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+                
+                <label for="password" class="titulos">Contraseña:</label><br>
+                <input type="password" id="password" name="password" required><br><br>
+                
+                <label for="phone" class="titulos">Teléfono:</label><br>
+                <input type="text" id="phone" name="phone" required><br><br>
+
+                <div class="cont-sub">
+                    <input class="inputs" type="submit" value="Registrarse">
+                    <button class="inputs"><a href="index.php">Iniciar Sesión</a></button>
+                </div>
+            </form>
+        </div>
+    </div>
 
 </body>
 </html>

@@ -70,3 +70,42 @@ a {
     color: inherit;
     text-decoration: none;
 }
+.titulos{
+    font-size: calc(1rem + 1vw);
+}
+.show{
+    /*
+    position: absolute;
+    right: 15%;
+*/
+
+
+    cursor: pointer;
+    float: right;
+    transform: translate(-10px, -39px);
+
+}
+
+.inputs{
+    margin-top: 1em;
+    width: 50vw!important;
+    max-width: 500px;
+}
+.inputs_ingresar{
+    margin-top: 1   px;
+    width: 50vw;
+    max-width: 500px;
+}
+.cont-sub{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/*SIGN UP*/
+
+.contenedor_form-signup{
+    width: 75vw;
+    margin: auto;
+}

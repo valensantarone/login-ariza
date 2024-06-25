@@ -30,7 +30,7 @@
     }
 
     if (!isset($_SESSION['access_token'])) {
-        $login_button = '<a href="' . $google_client->createAuthUrl() . '" class="btn btn-secondary bx bxl-google">Iniciar sesión con Google</a>';
+        $login_button = '<a href="' . $google_client->createAuthUrl() . '" class="btn btn-secondary bx bxl-google inputs">Iniciar sesión con Google</a>';
     }
 
 
@@ -55,31 +55,26 @@
 </head> 
 
 <body>
-    <h1>Log In</h1>
+    
     <div class="container">
+    <h1 class='titulo'>Log In</h1>
         <div class="row">
             <div class="col-sm-12 col-12">
                 <form action="ingreso.php" method='post'>
-                    <label for="">Usuario</label>
-                    <br />
+                    <label for="" class='titulos'>Usuario</label>
                     <input class="form-control ema" type="text" id="nom" name='username' placeholder="Introduce su usuario" required />
-                    <br />
                     <div class="cont-pass">
-                        <label for="">Password</label>
-                        <br />
+                        <label for="" class='titulos'>Password</label>
                         <input type="password" class="form-control" id="pass" name='password' placeholder="Introduce su contraseña" required />
-                        <i class="bx bxs-show"></i>
+                        <i class="bx bxs-show show"></i>
                     </div>
-                    <br />
                     <div class="cont-sub">
-                        <button type="submit" class="btn btn-primary">Ingresar</button>
-                        <br />
-                        <button type="submit" class="btn btn-secondary">
+                        <button type="submit" class="btn btn-primary inputs_ingresar">Ingresar</button>
+                        <button type="submit" class="btn btn-secondary inputs">
                         <!-- <a href="https://bomberosalerta.com.ar/gonza/ServicioLogin-Singup/Sing-up.php">Registrarse</a> -->
                             <a href="signup.php">Registrarse</a>
                         </button>
-                        <br>
-                        <button type='button' class="btn btn-primary">
+                        <button type='button' class="btn btn-primary inputs">
                         <a href="alta.php">¿Olvidó su contraseña?</a>
                         </button>
                         <?php echo $login_button; ?>
