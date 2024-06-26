@@ -70,7 +70,7 @@
                     <div class="cont-sub">
                         <button type="submit" class="btn btn-primary inputs_ingresar">Ingresar</button>
                         <button type="submit" class="btn btn-secondary inputs">
-                        <!-- <a href="https://bomberosalerta.com.ar/gonza/ServicioLogin-Singup/Sing-up.php">Registrarse</a> -->
+                       
                             <a href="signup.php">Registrarse</a>
                         </button>
                         <button type='button' class="btn btn-primary inputs">
